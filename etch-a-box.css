@@ -2,22 +2,27 @@ body {
 	font-family: arial,sans-serif;
 }
 
-button {
-	margin: 30px auto;
-    background-color: rgb(242, 242, 242); /* Green */
+button, select {
+	margin: 30px 5px;
+    background-color: rgb(232, 232, 232);
     border: none;
     color: #666;
-    padding: 15px 32px;
+    width: 120px;
+    height: 50px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    border-radius: 5px;
 }
-
-button:hover {
+button:hover, select:hover {
 	background-color: rgb(222, 222, 222);
 	color: #444;
 	cursor: pointer;
+}
+
+button:focus, select:focus {
+	outline: none;
 }
 
 .etch-box, .container{
@@ -28,6 +33,4 @@ button:hover {
 	float: left;
 }
 
-.etch-box-hover {
-	background-color: black;
-}
+
